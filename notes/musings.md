@@ -1,0 +1,22 @@
+---
+layout: distill
+title: musings
+date: 2015-03-15 16:40:16
+description: some deep shit
+# tags: formatting links
+# categories: sample-posts
+# permalink: /notes/
+---
+Through an extensive study of the intro sections of Wikipedia pages and watered-down video essays, I have procured enough knowledge to deceive myself into believing that I understand the basics of Existential and Indic philosophies. What follows is an attempt to organize what I understand and fill in the gaps that emerge. The flow of topics will follow roughly the order in which I came across them. (Un)surprisingly, several of my friends also came across these subjects in a similar order. All declarative statements are to be understood as my subjective opinions. 
+
+#### Why make the effort? 
+My childhood and early adolescent years were spent being religious. Once I started reading things on my own, and got some encouragement to think independently and question things, skepticism seeped in. After reading some classic non-fiction books and elementary high school physics (obviously, it didn't take a lot to convince me), I became as ardent of an atheist as I was a theist a few short months back. The next few months were spent perusing and absorbing the standard palette of arguments against the existence of any kind of supernatural entity. After a while I realized that this is hopeless. No one can prove or disprove the existence of God, and I settled on being an agnostic who behaved as if there was no God. My love for rationalism went hand-in-hand. I encountered some atheistic Indian schools of thought like Charvak and Ajivika, which gave me some validation. Embracing Nihilism was a natural consequence, since till then the meaning and purpose of my life was being derived from religion.[^1] Faith, the crutch that I used to deal with typical hardships of life was no longer available, and a replacement was urgently needed. Perhaps, a stronger man would not need a crutch. Perhaps, merely realizing the randomness of outcomes, accepting the lack of agency, staring at the meaninglessness of life would be enough to keep him happy. But I am no Sisyphus. In fact, I think there aren't too many Sisyphi roaming around in this world. 
+
+These basic realizations, although they might seem logical and obvious, lack two things which are essential for the meek amongst us to live a blissful life:[^2] a concrete, well defined purpose; and a robust framework to move towards the said purpose, in a way that isn't regretted later in life. The underprivileged do not have the luxury for this pursuit: there's no time for such musings when one's basic needs aren't met. When you have mouths to feed, acquiring food itself becomes life's purpose.[^3] [^4] A few fortunate ones have these needs met innately, their purpose comes naturally to them—they need not do anything more. Many prefer to not think a lot,[^5] and discretely cope with the situations they encounter on the go. Unless one's life takes some wild turns, this is sustainable enough to go through life without much suffering. On top of this, most people I've come across also use faith/religion in some way to cope, and often turn to different magnitudes of superstitions in the face of hardships. Some find their escape in drugs, by looking for aliens or making an unnatural number of trips to see the Northern Lights (_for God's sake, how many trips do you need to make to see the same fucking lights_). Those of us for whom none of these methods play well, are left rifling through the scriptures.[^6]
+
+[^1]: This is precisely what Nietzsche predicted would happen with the advancement of science. He called this a disease. 
+[^2]: [Dharma Lecture 1: How Responsibility and Purpose Help With Suffering - YouTube](https://www.youtube.com/watch?v=APMt3dO96Js)
+[^3]: [Asking Hunter-Gatherers Life's Toughest Questions - YouTube](https://www.youtube.com/watch?v=TAGjuRwx_Y8)
+[^4]: [OSHO: You Have Everything but You Don't Have Yourself - YouTube](https://www.youtube.com/watch?v=Zo_P2rbEtwo)
+[^5]: Ishopnishad calls this Atmahana (slaying one's Atman/Soul). Camus terms this intellectual suicide in The Myth of Sisyphus.
+[^6]: In reality, people don't fit nicely into these separate well-defined boxes, but use a combination of these approaches. Am I missing any other ways?
