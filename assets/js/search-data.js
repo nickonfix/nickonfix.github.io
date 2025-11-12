@@ -23,14 +23,11 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "news-joined-as-research-intern-at-atheropoint-llc",
-          title: 'Joined as Research Intern at Atheropoint LLC',
-          description: "",
-          section: "News",},{id: "news-graduated-from-bharati-vidyapeeth-college-of-engineering",
+        },{id: "news-graduated-from-bharati-vidyapeeth-college-of-engineering",
           title: 'Graduated from Bharati Vidyapeeth College of Engineering!',
           description: "",
-          section: "News",},{id: "news-graduated-from-bharati-vidyapeeth-college-of-engineering",
-          title: 'Graduated from Bharati Vidyapeeth College of Engineering!',
+          section: "News",},{id: "news-joined-as-a-research-intern-at-atheropoint-llc",
+          title: 'Joined as a Research Intern at Atheropoint LLC',
           description: "",
           section: "News",},{id: "news-applying-for-phd-and-master-s-application",
           title: 'Applying for PhD and Master’s application',
