@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Applying for PhD and Master's application
+Applying to PhD and Master’s Programs
