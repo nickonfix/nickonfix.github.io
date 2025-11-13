@@ -32,8 +32,8 @@ ninja.data = [{
           section: "News",},{id: "news-applying-for-phd-and-master-s-application",
           title: 'Applying for PhD and Master’s application',
           description: "",
-          section: "News",},{id: "projects-knee-osteo-arthiritis-detection-using-deep-learning",
-          title: 'Knee Osteo-Arthiritis Detection using Deep learning',
+          section: "News",},{id: "projects-knee-osteo-arthritis-detection-using-deep-learning",
+          title: 'Knee Osteo-Arthritis Detection using Deep learning',
           description: "Live link -- https://liveknee.onrender.com/",
           section: "Projects",handler: () => {
               window.location.href = "/projects/P1/";
