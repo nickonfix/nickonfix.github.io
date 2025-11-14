@@ -18,7 +18,7 @@ posts: false
 ---
 Hi, I’m a Research Intern at <a href="https://www.linkedin.com/company/atheropoint" target="_blank">AtheroPoint</a>, where I work on transformer-based architectures, embedded attention mechanisms, and data-efficient <a href="https://en.wikipedia.org/wiki/Deep_learning" target="_blank">deep learning</a> models for large-scale biomedical and imaging datasets. My research focuses on sequence modeling, <a href="https://en.wikipedia.org/wiki/Representation_learning" target="_blank">representation learning</a>, and attention-driven transformer variants methods that naturally extend to modern <a href="https://en.wikipedia.org/wiki/Natural_language_processing" target="_blank">NLP</a> systems.
 
-Although my recent work is rooted in biomedical AI, the underlying techniques I use transformers, self-supervised learning, and attention mechanisms—are fundamentally domain-general. These are the same principles that drive today’s NLP systems, motivating my transition toward language modeling, multimodal understanding, and efficient transformer design.
+Although my recent work is rooted in biomedical AI, the underlying techniques I use transformers, self-supervised learning, and attention mechanisms are fundamentally domain general. These are the same principles that drive today’s NLP systems, motivating my transition toward language modeling, multimodal understanding, and efficient transformer design.
 
 My current research at AtheroPoint is supervised by
 <a href="https://scholar.google.com/citations?user=AKJK7UQAAAAJ&hl=en" target="_blank">Dr. Jasjit Singh Suri</a> and
