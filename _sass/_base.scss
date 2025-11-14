@@ -313,7 +313,52 @@ ul.task-list input[type="checkbox"] {
   background-color: var(--global-bg-color);
   opacity: 0.97;
   font-family: 'Georgia', 'Garamond', serif;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 244, 255, 0.93) 25%, rgba(232, 241, 255, 0.93) 50%, rgba(240, 248, 255, 0.93) 75%, rgba(255, 255, 255, 0.95) 100%);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle at 5% 10%, rgba(13, 110, 253, 0.08) 0%, transparent 25%),
+      radial-gradient(circle at 95% 20%, rgba(0, 123, 255, 0.06) 0%, transparent 28%);
+    pointer-events: none;
+    z-index: 0;
+  }
 }
+
+html[data-theme="dark"] .navbar {
+  background: linear-gradient(180deg, #0f1419 0%, #1a1f2e 50%, #0f1419 100%);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  
+  &::before {
+    background-image: 
+      radial-gradient(circle at 0% 0%, rgba(38, 152, 186, 0.12) 0%, transparent 40%),
+      radial-gradient(circle at 100% 100%, rgba(17, 214, 139, 0.08) 0%, transparent 40%),
+      radial-gradient(ellipse at 50% 50%, rgba(181, 9, 172, 0.03) 0%, transparent 60%);
+  }
+}
+
+body {
+  padding-top: 56px;
+}
+
+html[data-theme="dark"] body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
 
 .navbar .dropdown-menu {
   background-color: var(--global-bg-color);
