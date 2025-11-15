@@ -1,2 +1,20 @@
-linkedin.com
-reddit.com
+# Google Scholar (always returns 403 to crawlers)
+https://scholar.google.com*
+https://scholar.google.co.in*
+
+# Wikipedia page that does not exist
+https://en.wikipedia.org/wiki/Computational_efficiency
+
+# LinkedIn
+https://linkedin.com*
+http://linkedin.com*
+https://www.linkedin.com*
+http://www.linkedin.com*
+
+# Reddit (all subdomains)
+*.reddit.com*
+https://reddit.com*
+http://reddit.com*
+
+# Local file paths accidentally parsed by Liquid
+file://*
