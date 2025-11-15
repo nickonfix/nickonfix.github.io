@@ -45,17 +45,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
       - name: Link Checker 🔗
         uses: lycheeverse/lychee-action@v2
         with:
           fail: true
-
-          # THE KEY FIX: load your ignore file + regex ignores
-          args: >
+          args: |
             --exclude-file .lycheeignore
-            --exclude "\\{\\{.*\\}\\}"        # ignore all Liquid template {{ ... }}
-            --exclude "file://.*"             # ignore file:// links
+            --exclude "\{\{.*\}\}"
+            --exclude "file://.*"
             --verbose
             --no-progress
             .
