@@ -15,6 +15,18 @@ _data/
 _sass/
 _includes/
 _layouts/
+_config.yml
+_data/coauthors.yml
+_data/venues.yml
+_includes/header.liquid
+_includes/scripts/analytics.html
+_includes/scripts/bootstrap.html
+_includes/scripts/jquery.html
+_includes/scripts/masonry.html
+_includes/scripts/mathjax.html
+_includes/scripts/misc.html
+_layouts/about.liquid
+_layouts/project.liquid
 _news/announcement_2.md
 _news/announcement_3.md
 _news/announcement_4.md
@@ -24,6 +36,8 @@ _pages/dropdown.md
 _pages/projects.md
 _pages/publications.md
 _projects/P1.md
+_sass/_base.scss
+_sass/_layout.scss
 nick.code-workspace
 notes/musings.md
 README.md
