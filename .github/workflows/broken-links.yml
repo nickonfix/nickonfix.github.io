@@ -19,6 +19,7 @@ on:
       - "!.github/workflows/lighthouse-badger.yml"
       - "!.github/workflows/prettier.yml"
       - "!lighthouse_results/**"
+
   pull_request:
     branches:
       - master
@@ -41,12 +42,20 @@ on:
 jobs:
   link-checker:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
       - name: Link Checker 🔗
-        uses: lycheeverse/lychee-action@v2.1.0
+        uses: lycheeverse/lychee-action@v2
         with:
           fail: true
-          # removed md files that include liquid tags
-          args: --user-agent 'curl/7.54' --exclude-path README.md --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/2018-12-22-distill.md --exclude-path _posts/2023-04-24-videos.md --verbose --no-progress './**/*.md' './**/*.html'
+
+          # THE KEY FIX: load your ignore file + regex ignores
+          args: >
+            --exclude-file .lycheeignore
+            --exclude "\\{\\{.*\\}\\}"        # ignore all Liquid template {{ ... }}
+            --exclude "file://.*"             # ignore file:// links
+            --verbose
+            --no-progress
+            .
