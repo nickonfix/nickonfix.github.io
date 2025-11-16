@@ -1467,86 +1467,96 @@ ninja-keys::part(ninja-input-wrapper) {
 }
 
 
+/* ============================
+   GLOBAL BACKGROUND
+=============================== */
 
+body {
+  background:
+    radial-gradient(circle at 30% 20%, var(--glow1), transparent 60%),
+    radial-gradient(circle at 70% 80%, var(--glow2), transparent 60%),
+    var(--bg);
+  background-attachment: fixed;
+  overflow-x: hidden;
+  position: relative;
+}
 
+/* Dark Mode */
+html[data-theme="dark"] {
+  --bg: #050510;
+  --glow1: rgba(120, 0, 255, 0.15);
+  --glow2: rgba(0, 150, 255, 0.20);
+  --star: rgba(255, 255, 255, 0.9);
+}
 
+/* Light Mode – subtle sky blue & white */
+html[data-theme="light"] {
+  --bg: #f9fbff;                      /* clean white-blue */
+  --glow1: rgba(150, 190, 255, 0.18); /* soft sky glow */
+  --glow2: rgba(200, 230, 255, 0.25); /* pale ice blue */
+  --star: rgba(0, 80, 150, 0.5);      /* subtle navy-blue star */
+}
 
-/* GLOBAL SHOOTING STAR BACKGROUND */
-body::before,
-body::after {
-  content: '';
+/* ============================
+   STAR FIELD
+=============================== */
+
+.star-field {
   position: fixed;
-  width: 3px;
-  height: 3px;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 50%;
-  pointer-events: none;
+  inset: 0;
+  overflow: hidden;
   z-index: -1;
+  pointer-events: none;
 }
 
-html[data-theme="light"] body::before,
-html[data-theme="light"] body::after {
-  background: rgba(0, 0, 0, 0.7);
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: var(--star);
+  opacity: 0.5;
+  animation: starFloat 12s linear infinite;
 }
 
-body::before {
-  top: 20%;
-  left: -50px;
-  animation: globalShoot1 6s ease-in-out infinite;
+@keyframes starFloat {
+  0% { transform: translateY(0); opacity: 0.7; }
+  100% { transform: translateY(-200px); opacity: 0.1; }
 }
 
-body::after {
-  top: 70%;
-  left: -50px;
-  animation: globalShoot2 8s ease-in-out infinite 2s;
+/* ============================
+   SHOOTING STARS (Very Soft)
+=============================== */
+
+.shooting-star {
+  position: fixed;
+  width: 2px;
+  height: 2px;
+  background: var(--star);
+  border-radius: 50%;
+  filter: blur(0.4px);
+  top: -30px;
+  left: -100px;
+  opacity: 0;
+  animation: shooting 7s ease-in-out infinite;
 }
 
-/* You may add more stars */
-body .star-extra-1 {
-  top: 40%;
-  left: -50px;
-  animation: globalShoot3 9s ease-in-out infinite 1s;
+.shooting-star:nth-child(2) { animation-delay: 3s; }
+.shooting-star:nth-child(3) { animation-delay: 5s; }
+
+@keyframes shooting {
+  0% { opacity: 0; transform: translate(0,0) scale(1); }
+  12% { opacity: 1; }
+  80% { opacity: 0; }
+  100% { transform: translate(900px, 250px) scale(0.8); opacity: 0; }
 }
 
-body .star-extra-2 {
-  top: 10%;
-  left: -50px;
-  animation: globalShoot4 7s ease-in-out infinite 3s;
-}
-
-/* KEYFRAMES */
-@keyframes globalShoot1 {
-  0% { transform: translate(0,0); opacity:0; }
-  5% { opacity:1; }
-  95% { opacity:0; }
-  100% { transform: translate(600px,300px); opacity:0; }
-}
-
-@keyframes globalShoot2 {
-  0% { transform: translate(0,0); opacity:0; }
-  5% { opacity:1; }
-  95% { opacity:0; }
-  100% { transform: translate(550px,-250px); opacity:0; }
-}
-
-@keyframes globalShoot3 {
-  0% { transform: translate(0,0); opacity:0; }
-  5% { opacity:1; }
-  95% { opacity:0; }
-  100% { transform: translate(600px,300px); opacity:0; }
-}
-
-@keyframes globalShoot4 {
-  0% { transform: translate(0,0); opacity:0; }
-  5% { opacity:1; }
-  95% { opacity:0; }
-  100% { transform: translate(600px,-200px); opacity:0; }
-}
-
-/* Respect Reduced Motion */
+/* ============================
+   REDUCED MOTION SUPPORT
+=============================== */
 @media (prefers-reduced-motion: reduce) {
-  body::before,
-  body::after {
+  .star,
+  .shooting-star {
     animation: none;
     opacity: 0;
   }
