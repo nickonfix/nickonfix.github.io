@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Applying to PhD and Master’s Programs
+Advancing my work in Machine Learning and Research.
