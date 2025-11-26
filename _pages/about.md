@@ -33,6 +33,6 @@ I completed my Bachelor of Technology at
 <a href="https://scholar.google.co.in/citations?hl=en&user=mFlMAqcAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Dr. Rubbena Vohra</a>.
 Their early guidance introduced me to deep learning, transformers, and representation learning, shaping my interest in model generalization and sequence understanding.
 
-I work on transformers, NLP, self-supervised learning, sequence modeling, and efficient ML systems, and I’m exploring roles where I can apply these skills to real-world problems.
+My interests span transformers, NLP, self-supervised learning, sequence modeling, and efficient ML systems, and I’m always open to collaborating on real-world AI applications.
 
 Outside core ML work, I practice <a href="https://en.wikipedia.org/wiki/Competitive_programming" target="_blank">competitive programming</a> to strengthen my <a href="https://en.wikipedia.org/wiki/Algorithm" target="_blank">algorithmic reasoning</a> and <a href="https://en.wikipedia.org/wiki/Computational_efficiency" target="_blank">computational efficiency</a>, which supports my work on optimizing deep learning architectures.
