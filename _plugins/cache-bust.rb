@@ -43,7 +43,12 @@ module Jekyll
     end
 
     def bust_css_cache(file_name)
-      CacheDigester.new(file_name: file_name, directory: 'assets/_sass').digest!
+      # The stylesheets live in _sass/, not assets/_sass/. Pointed at a
+      # directory that does not exist, the glob returned nothing and every
+      # build stamped main.css with the MD5 of an empty string
+      # (d41d8cd98f00b204e9800998ecf8427e), so the URL never changed and
+      # returning visitors kept the previously cached CSS.
+      CacheDigester.new(file_name: file_name, directory: '_sass').digest!
     end
   end
 end
