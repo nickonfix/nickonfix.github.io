@@ -1,5 +1,9 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
-  {% assign work = data[1] | sort: 'startDate' | reverse %}
+  {%- comment -%} Ongoing roles first, then most recent start date. {%- endcomment -%}
+  {% assign work_sorted = data[1] | sort: 'startDate' | reverse %}
+  {% assign work_current = work_sorted | where_exp: 'w', 'w.endDate == nil' %}
+  {% assign work_past = work_sorted | where_exp: 'w', 'w.endDate' %}
+  {% assign work = work_current | concat: work_past %}
   {% for content in work %}
     <li class="list-group-item">
       <div class="row">
