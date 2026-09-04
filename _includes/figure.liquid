@@ -66,15 +66,15 @@
       {% if include.title %}
         title="{{ include.title }}"
       {% endif %}
+      {% comment %}
+        The <source> srcset above can hand the browser a small responsive
+        variant (publication previews ask for 200px), and medium-zoom will not
+        enlarge past the loaded image's natural size. data-zoom-src points the
+        zoom at the original file so clicking a thumbnail shows it in full
+        resolution.
+      {% endcomment %}
       {% if include.zoomable %}
         data-zoomable
-        {%- comment -%}
-          The <source> srcset above can hand the browser a small responsive
-          variant (publication previews ask for 200px), and medium-zoom will
-          not enlarge past the loaded image's natural size. Point the zoom at
-          the original file so clicking a thumbnail shows the full-resolution
-          image.
-        {%- endcomment -%}
         data-zoom-src="{{ include.path | relative_url }}"
       {% endif %}
       {% if include.loading %}
