@@ -54,6 +54,10 @@ html[data-theme="dark"] body {
        ellipse. Crop to a square and the circle is a real circle. */
     aspect-ratio: 1 / 1;
     object-fit: cover;
+    /* Nudge the photo down 4px inside the circle; the frame itself does not
+       move. The source is portrait, so cover leaves vertical overflow to
+       shift into and no gap appears. */
+    object-position: center calc(50% + 4px);
     margin-left: auto;
   }
 }
