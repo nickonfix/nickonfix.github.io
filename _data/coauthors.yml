@@ -17,3 +17,10 @@
 "Suri":
   - firstname: ["Jasjit", "Singh" , 'Suri']
     url: https://scholar.google.com/citations?user=AKJK7UQAAAAJ&hl=en&oi=sra
+"Saba":
+  - firstname: ["Luca", "L."]
+    url: https://scholar.google.co.in/citations?user=cppq2DcAAAAJ&hl=en&oi=ao
+
+"Dubey":
+  - firstname: ["Arun", "Arun K.", "A. K.", "A."]
+    url: https://scholar.google.com/citations?user=4IC-Sw8AAAAJ&hl=en&oi=ao
