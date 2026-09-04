@@ -18,10 +18,17 @@ ninja.data = [{
           },
         },{id: "nav-publications",
           title: "Publications",
-          description: "sorted by year",
+          description: "journal articles, patents and preprints, sorted by year",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Research Engineer at AtheroPoint LLC, working on transformers and attention-based deep learning for biomedical imaging.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
           },
         },{id: "news-graduated-from-bharati-vidyapeeth-college-of-engineering",
           title: 'Graduated from Bharati Vidyapeeth College of Engineering!',
@@ -32,11 +39,30 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-has-been-accepted-for-publication-in-measurement",
           title: 'Our paper has been accepted for publication in Measurement!',
           description: "",
+          section: "News",},{id: "news-u-s-patent-application-19-738-450-method-and-apparatus-for-cardiovascular-disease-risk-assessment-filed-with-the-uspto",
+          title: 'U.S. patent application 19/738,450, Method and Apparatus for Cardiovascular Disease Risk Assessment, filed...',
+          description: "",
+          section: "News",},{id: "news-our-twelve-fused-model-study-is-published-in-diagnostics-mdpi-16-16-2538",
+          title: 'Our twelve-fused-model study is published in Diagnostics (MDPI), 16(16):2538.',
+          description: "",
+          section: "News",},{id: "news-second-u-s-patent-filed-with-the-uspto-method-and-apparatus-for-cardiovascular-risk-assessment-using-an-ensemble-of-deep-neural-networks",
+          title: 'Second U.S. patent filed with the USPTO: Method and Apparatus for Cardiovascular Risk...',
+          description: "",
           section: "News",},{id: "projects-knee-osteo-arthritis-detection-using-deep-learning",
           title: 'Knee Osteo-Arthritis Detection using Deep learning',
           description: "Live link -- https://liveknee.onrender.com/",
           section: "Projects",handler: () => {
               window.location.href = "/projects/P1/";
+            },},{id: "projects-research-engineer-atheropoint-llc",
+          title: 'Research Engineer — AtheroPoint LLC',
+          description: "Transformer/Mamba-based carotid ultrasound segmentation and automated cIMT &amp; plaque-burden measurement, deployed in AtheroEdge 4.0.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/P0/";
+            },},{id: "projects-python-developer-llm-fine-tuning-green-rider-technologies",
+          title: 'Python Developer, LLM Fine-Tuning — Green Rider Technologies',
+          description: "Multilingual instruction-tuning data curation and LoRA fine-tuning of Gemini 1.0 Pro and LLaMA 2, with automated benchmarking.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/P2/";
             },},{
         id: 'social-email',
         title: 'email',
