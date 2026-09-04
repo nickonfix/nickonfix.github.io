@@ -30,11 +30,11 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "news-graduated-from-bharati-vidyapeeth-college-of-engineering",
-          title: 'Graduated from Bharati Vidyapeeth College of Engineering!',
+        },{id: "news-joined-atheropoint-llc-as-a-research-engineer",
+          title: 'Joined AtheroPoint LLC as a Research Engineer.',
           description: "",
-          section: "News",},{id: "news-joined-as-a-research-intern-at-atheropoint-llc",
-          title: 'Joined as a Research Intern at Atheropoint LLC',
+          section: "News",},{id: "news-graduated-from-bharati-vidyapeeth-college-of-engineering",
+          title: 'Graduated from Bharati Vidyapeeth College of Engineering!',
           description: "",
           section: "News",},{id: "news-our-paper-has-been-accepted-for-publication-in-measurement",
           title: 'Our paper has been accepted for publication in Measurement!',
