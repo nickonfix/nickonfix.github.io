@@ -1270,6 +1270,15 @@ body.zoom-open .container {
   z-index: auto;
 }
 
+/* Justify the about page prose so the right edge is flush like the left.
+   `hyphens` keeps the inter-word gaps from opening up on narrow screens,
+   and the last line of each paragraph stays left-aligned. */
+.about-text p {
+  text-align: justify;
+  text-align-last: left;
+  hyphens: auto;
+}
+
 #toc-sidebar {
   z-index: 1;
 }
