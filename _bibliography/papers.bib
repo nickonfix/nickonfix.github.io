@@ -1,46 +1,18 @@
 ---
 ---
 
-@article{singh2026meas,
-      title={Attention/Transformer-based Artificial Intelligence Models for Carotid Segmentation and Intima Media Thickness/Plaque Area Measurements in Japanese Ultrasound Scans},
-      author = {Nikhil Singh and Arun K. Dubey and Luca Saba and Jasjit S. Suri},
+@misc{suri2026patentensemble,
+      title={Method and Apparatus for Cardiovascular Risk Assessment Using an Ensemble of Deep Neural Networks},
+      author={Jasjit S. Suri and Nikhil Singh},
       year={2026},
-      month={January},
+      month={September},
       selected={true},
-      abbr={Measurement},
-      publisher={Elsevier},
-      doi={10.1016/j.measurement.2026.120311},
-      html={https://doi.org/10.1016/j.measurement.2026.120311},
-      preview={meas.jpg},
-      pdf={MEAS.pdf},
-      bibtex_show={true},
-      journal={Measurement (Elsevier) (Q1, IF = 6.1) (Accepted)},
-      abstract={Background and Motivation: Accurate plaque segmentation and measurement in carotid
-ultrasound scans is essential for effective diagnosis and cardiovascular disease (CVD) risk
-stratification. The latest techniques based on solo single stage deep learning UNet (M1:SS-
-UNet) leads to inconsistency in low contrast scans. We hypothesize that variants of UNet
-such as transformers can be more powerful paradigms.
-Method: Design and develop novel single-stage UNet-based transformer (M6:SSwAttSkip-
-XmerBot-UNet) for the far wall segmentation and intima-media thickness/plaque area
-measurements in Japanese diabetic cohort. We use augmented data and cross-validation
-protocol for performance evaluation and generalization. Performance evaluation includes 16
-novel metrics, namely model complexity, model size, training efficiency, performance to
-model size ratio, performance to complexity, and training time. We benchmarked our novel
-transformer system against five models utilizing single and double stage attention-based
-configurations namely M1:SS-UNet, single-stage with attention-UNet (M2:SSwAttSkip-
-UNet), double-stage with attention-UNet (M3:DSwAttSkip-UNet), double-stage with
-attention in decoder UNet (M4:DSwAttDeco-UNet) and single stage with transformer in the
-bottle neck layer (M5:SSTransBot-UNet).
-Results: The results showed that M6:SSwAttSkip-XmerBot-UNet achieved a perfect score of
-100%, while M4:DSwAttDeco-UNet followed closely by 93.93%. Both models consistently
-outperformed M1:SS-UNet, M2:SSwAttSkip-UNet, M3:DSwAttSkip-UNet and M5:
-SSTransBot-UNet across all the 16 metrics. The final ranking of the UNet models were:
-SSwAttSkip-XmerBot-UNet>DSwAttDeco-UNet>SS-UNet>SSTransBot-UNet>
-SSwAttSkip-UNet>DSwAttSkip-UNet. M6:SSwAttSkip-XmerBot-UNet demonstrates
-comparable effectiveness with greater efficiency, making it a strong alternative.
-Conclusions: We conclude that transformer-based models like M6:SSwAttSkip-XmerBot-
-UNet provide highly accurate, reliable, and automated technique that segments and measures
-the risk of CVD.}
+      abbr={US Patent},
+      preview={Patent.jpg},
+      journal={U.S. Patent filed with USPTO, assigned to AtheroPoint LLC},
+      abstract={U.S. patent application filed with the USPTO and assigned to AtheroPoint LLC, covering
+cardiovascular risk assessment driven by an ensemble of deep neural networks that fuses
+imaging-derived phenotypes with conventional risk factors.}
 }
 
 @article{singh2026diagnostics,
@@ -83,41 +55,6 @@ Conclusions: We conclude that Hybrid transformer-based models like B1+T4 provide
 accurate, reliable, and automated techniques that segment and measure the risk of CVD.}
 }
 
-@article{singh2026cdt,
-      title={A Comparative Study of State-of-the-Art AI Models for Automated Plaque Measurement in a Carotid Ultrasound Japanese Cohort},
-      author = {Nikhil Singh and Luca Saba and Jasjit S. Suri},
-      year={2026},
-      month={March},
-      selected={true},
-      abbr={CDT},
-      publisher={AME Publishing Company},
-      preview={cdt.jpg},
-      bibtex_show={true},
-      journal={Cardiovascular Diagnosis and Therapy (AME) (Q1, IF = 2.2) (Major Revision)},
-      pdf={BSPC.pdf},
-      html={https://cdt.amegroups.org/},
-      abstract={Background and Motivation: Accurate plaque measurement in carotid ultrasound images is
-essential for effective diagnosis and CVD risk stratification. Traditional methods for plaque
-assessment rely on manual segmentation and rule-based approaches, leading to inconsistent
-results and observer variability. Although deep learning (DL) models have increased
-segmentation accuracy, they face challenges in dealing with complex plaque structures as
-well as low contrast ultrasound images. This study aims to compare state-of-the-art AI-driven
-models for carotid plaque measurement, evaluating their efficiency, robustness, and clinical
-applicability in a Japanese cohort.
-Method: This study evaluates three deep learning models, i.e., (i) conventional neural
-networks (cNonAtt-dsCNN), (ii) attention-enhanced U-Net (cAtt-ssUNet), (iii) a two-stage
-attention-based method (cAtt-dsUNet) and compares against commercial AtheroEdge 2.0
-(AE2.0) from AtheroPoint, CA, USA-an automated method. All three DL models were
-trained on the same Japanese data with identical hyperparameters using the Adam optimizer,
-batch size 32, and a learning rate of 0.001 on an NVIDIA GPU cluster. The metrics used
-were: (i) total plaque area, and carotid intima-media thickness (cIMT), giving the automated
-lumen-intima, and media-adventitia (LIMA) boundaries in the far wall carotid ultrasound
-scans. The performance of these models was assessed using (i) Dice similarity, (ii) Jaccard
-index on binary segmented walls, and (iii) polyline distance metric for measuring cIMT.
-Conclusions: cAtt-dsUNet outperformed traditional DL methods and is comparable to the
-commercial system AtheroEdge.}
-}
-
 @article{ruzsa2026ynet,
       title={Y-Net-Based Wall Thickness and Plaque Burden Measurements in Ultrasound Scans with Low, Moderate, and High-Risk Patients},
       author = {Zoltan Ruzsa and Nikhil Singh and Luca Saba and Jasjit S. Suri},
@@ -156,16 +93,79 @@ AtheroPoint LLC, covering methods and apparatus for cardiovascular disease risk 
 from carotid ultrasound imaging and clinical covariates.}
 }
 
-@misc{suri2026patentensemble,
-      title={Method and Apparatus for Cardiovascular Risk Assessment Using an Ensemble of Deep Neural Networks},
-      author={Jasjit S. Suri and Nikhil Singh},
+@article{singh2026cdt,
+      title={A Comparative Study of State-of-the-Art AI Models for Automated Plaque Measurement in a Carotid Ultrasound Japanese Cohort},
+      author = {Nikhil Singh and Luca Saba and Jasjit S. Suri},
       year={2026},
-      month={September},
+      month={March},
       selected={true},
-      abbr={US Patent},
-      preview={Patent.jpg},
-      journal={U.S. Patent filed with USPTO, assigned to AtheroPoint LLC},
-      abstract={U.S. patent application filed with the USPTO and assigned to AtheroPoint LLC, covering
-cardiovascular risk assessment driven by an ensemble of deep neural networks that fuses
-imaging-derived phenotypes with conventional risk factors.}
+      abbr={CDT},
+      publisher={AME Publishing Company},
+      preview={cdt.jpg},
+      bibtex_show={true},
+      journal={Cardiovascular Diagnosis and Therapy (AME) (Q1, IF = 2.2) (Major Revision)},
+      pdf={BSPC.pdf},
+      html={https://cdt.amegroups.org/},
+      abstract={Background and Motivation: Accurate plaque measurement in carotid ultrasound images is
+essential for effective diagnosis and CVD risk stratification. Traditional methods for plaque
+assessment rely on manual segmentation and rule-based approaches, leading to inconsistent
+results and observer variability. Although deep learning (DL) models have increased
+segmentation accuracy, they face challenges in dealing with complex plaque structures as
+well as low contrast ultrasound images. This study aims to compare state-of-the-art AI-driven
+models for carotid plaque measurement, evaluating their efficiency, robustness, and clinical
+applicability in a Japanese cohort.
+Method: This study evaluates three deep learning models, i.e., (i) conventional neural
+networks (cNonAtt-dsCNN), (ii) attention-enhanced U-Net (cAtt-ssUNet), (iii) a two-stage
+attention-based method (cAtt-dsUNet) and compares against commercial AtheroEdge 2.0
+(AE2.0) from AtheroPoint, CA, USA-an automated method. All three DL models were
+trained on the same Japanese data with identical hyperparameters using the Adam optimizer,
+batch size 32, and a learning rate of 0.001 on an NVIDIA GPU cluster. The metrics used
+were: (i) total plaque area, and carotid intima-media thickness (cIMT), giving the automated
+lumen-intima, and media-adventitia (LIMA) boundaries in the far wall carotid ultrasound
+scans. The performance of these models was assessed using (i) Dice similarity, (ii) Jaccard
+index on binary segmented walls, and (iii) polyline distance metric for measuring cIMT.
+Conclusions: cAtt-dsUNet outperformed traditional DL methods and is comparable to the
+commercial system AtheroEdge.}
+}
+
+@article{singh2026meas,
+      title={Attention/Transformer-based Artificial Intelligence Models for Carotid Segmentation and Intima Media Thickness/Plaque Area Measurements in Japanese Ultrasound Scans},
+      author = {Nikhil Singh and Arun K. Dubey and Luca Saba and Jasjit S. Suri},
+      year={2026},
+      month={January},
+      selected={true},
+      abbr={Measurement},
+      publisher={Elsevier},
+      doi={10.1016/j.measurement.2026.120311},
+      html={https://doi.org/10.1016/j.measurement.2026.120311},
+      preview={meas.jpg},
+      pdf={MEAS.pdf},
+      bibtex_show={true},
+      journal={Measurement (Elsevier) (Q1, IF = 6.1) (Accepted)},
+      abstract={Background and Motivation: Accurate plaque segmentation and measurement in carotid
+ultrasound scans is essential for effective diagnosis and cardiovascular disease (CVD) risk
+stratification. The latest techniques based on solo single stage deep learning UNet (M1:SS-
+UNet) leads to inconsistency in low contrast scans. We hypothesize that variants of UNet
+such as transformers can be more powerful paradigms.
+Method: Design and develop novel single-stage UNet-based transformer (M6:SSwAttSkip-
+XmerBot-UNet) for the far wall segmentation and intima-media thickness/plaque area
+measurements in Japanese diabetic cohort. We use augmented data and cross-validation
+protocol for performance evaluation and generalization. Performance evaluation includes 16
+novel metrics, namely model complexity, model size, training efficiency, performance to
+model size ratio, performance to complexity, and training time. We benchmarked our novel
+transformer system against five models utilizing single and double stage attention-based
+configurations namely M1:SS-UNet, single-stage with attention-UNet (M2:SSwAttSkip-
+UNet), double-stage with attention-UNet (M3:DSwAttSkip-UNet), double-stage with
+attention in decoder UNet (M4:DSwAttDeco-UNet) and single stage with transformer in the
+bottle neck layer (M5:SSTransBot-UNet).
+Results: The results showed that M6:SSwAttSkip-XmerBot-UNet achieved a perfect score of
+100%, while M4:DSwAttDeco-UNet followed closely by 93.93%. Both models consistently
+outperformed M1:SS-UNet, M2:SSwAttSkip-UNet, M3:DSwAttSkip-UNet and M5:
+SSTransBot-UNet across all the 16 metrics. The final ranking of the UNet models were:
+SSwAttSkip-XmerBot-UNet>DSwAttDeco-UNet>SS-UNet>SSTransBot-UNet>
+SSwAttSkip-UNet>DSwAttSkip-UNet. M6:SSwAttSkip-XmerBot-UNet demonstrates
+comparable effectiveness with greater efficiency, making it a strong alternative.
+Conclusions: We conclude that transformer-based models like M6:SSwAttSkip-XmerBot-
+UNet provide highly accurate, reliable, and automated technique that segments and measures
+the risk of CVD.}
 }
