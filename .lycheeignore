@@ -2,9 +2,6 @@
 https://scholar.google.com*
 https://scholar.google.co.in*
 
-# Wikipedia page that does not exist
-https://en.wikipedia.org/wiki/Computational_efficiency
-
 # LinkedIn
 https://linkedin.com*
 http://linkedin.com*
@@ -12,7 +9,7 @@ https://www.linkedin.com*
 http://www.linkedin.com*
 
 # Reddit (all subdomains)
-*.reddit.com*
+.*\.reddit\.com.*
 https://reddit.com*
 http://reddit.com*
 

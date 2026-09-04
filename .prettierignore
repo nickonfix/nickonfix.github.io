@@ -30,12 +30,17 @@ _layouts/project.liquid
 _news/announcement_2.md
 _news/announcement_3.md
 _news/announcement_4.md
+_news/announcement_5.md
+_news/announcement_6.md
+_news/announcement_7.md
 _pages/about.md
 _pages/blog.md
 _pages/dropdown.md
 _pages/projects.md
 _pages/publications.md
+_projects/P0.md
 _projects/P1.md
+_projects/P2.md
 _sass/_base.scss
 _sass/_layout.scss
 nick.code-workspace

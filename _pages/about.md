@@ -35,4 +35,4 @@ Their early guidance introduced me to deep learning, transformers, and represent
 
 My interests span transformers, NLP, self-supervised learning, sequence modeling, and efficient ML systems, and I’m always open to collaborating on real-world AI applications.
 
-Outside core ML work, I practice <a href="https://en.wikipedia.org/wiki/Competitive_programming" target="_blank">competitive programming</a> to strengthen my <a href="https://en.wikipedia.org/wiki/Algorithm" target="_blank">algorithmic reasoning</a> and <a href="https://en.wikipedia.org/wiki/Computational_efficiency" target="_blank">computational efficiency</a>, which supports my work on optimizing deep learning architectures.
+Outside core ML work, I practice <a href="https://en.wikipedia.org/wiki/Competitive_programming" target="_blank">competitive programming</a> to strengthen my <a href="https://en.wikipedia.org/wiki/Algorithm" target="_blank">algorithmic reasoning</a> and <a href="https://en.wikipedia.org/wiki/Computational_complexity" target="_blank">computational efficiency</a>, which supports my work on optimizing deep learning architectures.
