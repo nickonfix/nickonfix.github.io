@@ -49,7 +49,7 @@ html[data-theme="dark"] body {
   img {
     display: block;
     width: 100%;
-    max-width: 190px;
+    max-width: 192px;
     /* The source photo is portrait, so rounded-circle alone renders an
        ellipse. Crop to a square and the circle is a real circle. */
     aspect-ratio: 1 / 1;
