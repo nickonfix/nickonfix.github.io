@@ -1254,9 +1254,20 @@ nav[data-toggle="toc"] {
   display: none !important;
 }
 
-.medium-zoom-overlay,
+.medium-zoom-overlay {
+  z-index: 1040;
+}
+
 .medium-zoom-image--opened {
-  z-index: 999;
+  z-index: 1041;
+}
+
+/* `.container` sets `position: relative; z-index: 1`, which traps the zoomed
+   image inside its own stacking context. The overlay is appended to <body>,
+   so it would paint over the image and the image would slide behind
+   later page content. Drop the stacking context while a zoom is open. */
+body.zoom-open .container {
+  z-index: auto;
 }
 
 #toc-sidebar {
