@@ -50,7 +50,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-knee-osteo-arthritis-detection-using-deep-learning",
           title: 'Knee Osteo-Arthritis Detection using Deep learning',
-          description: "Live link -- https://liveknee.onrender.com/",
+          description: "A deep-learning framework for early detection of knee osteoarthritis from ultrasound scans.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/P1/";
             },},{id: "projects-research-engineer-atheropoint-llc",
