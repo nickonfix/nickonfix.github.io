@@ -16,7 +16,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 posts: false
 ---
-I’m a Research Engineer at <a href="https://www.linkedin.com/company/atheropoint" target="_blank">AtheroPoint</a>, building transformer, attention and Mamba architectures for carotid ultrasound segmentation and cardiovascular risk assessment.
+I build transformer, attention and Mamba architectures for carotid ultrasound segmentation and cardiovascular risk assessment.
 
 That work covers automated cIMT and plaque-burden measurement validated against expert tracings across 5K+ annotated scans, and the FastAPI/AWS inference services behind AtheroEdge 4.0. Earlier, at Green Rider Technologies, I curated 200K+ multilingual records and LoRA-tuned Gemini 1.0 Pro and LLaMA 2.
 
