@@ -310,53 +310,19 @@ ul.task-list input[type="checkbox"] {
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
-  opacity: 0.97;
+  background: var(--global-bg-color);
   font-family: 'Georgia', 'Garamond', serif;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 244, 255, 0.93) 25%, rgba(232, 241, 255, 0.93) 50%, rgba(240, 248, 255, 0.93) 75%, rgba(255, 255, 255, 0.95) 100%);
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
+  transition: background-color 0.2s ease;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
   z-index: 1000;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: 
-      radial-gradient(circle at 5% 10%, rgba(13, 110, 253, 0.08) 0%, transparent 25%),
-      radial-gradient(circle at 95% 20%, rgba(0, 123, 255, 0.06) 0%, transparent 28%);
-    pointer-events: none;
-    z-index: 0;
-  }
-}
-
-html[data-theme="dark"] .navbar {
-  background: linear-gradient(180deg, #0f1419 0%, #1a1f2e 50%, #0f1419 100%);
-  border-bottom-color: rgba(255, 255, 255, 0.1);
-  
-  &::before {
-    background-image: 
-      radial-gradient(circle at 0% 0%, rgba(38, 152, 186, 0.12) 0%, transparent 40%),
-      radial-gradient(circle at 100% 100%, rgba(17, 214, 139, 0.08) 0%, transparent 40%),
-      radial-gradient(ellipse at 50% 50%, rgba(181, 9, 172, 0.03) 0%, transparent 60%);
-  }
 }
 
 body {
   padding-top: 56px;
-}
-
-html[data-theme="dark"] body {
-  background-color: #000000;
-  color: #ffffff;
 }
 
 
@@ -1279,6 +1245,56 @@ body.zoom-open .container {
   hyphens: auto;
 }
 
+/* CV section nav: centred row of links under the page title, in place of the
+   left-hand bootstrap-toc sidebar. */
+.cv-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem 1.4rem;
+  margin: 0 0 2rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid var(--global-divider-color);
+
+  a {
+    color: var(--global-text-color-light);
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+/* Minimalist cards: hairline rule instead of a raised panel. */
+.cv .card {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--global-divider-color);
+  border-radius: 0;
+  box-shadow: none;
+  padding: 1.6rem 0 0.4rem !important;
+  margin-top: 2rem !important;
+
+  .card-title {
+    font-size: 0.82rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+    margin-bottom: 1.1rem;
+  }
+}
+
+.cv .card .list-group-item {
+  background: transparent;
+  border: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 #toc-sidebar {
   z-index: 1;
 }
@@ -1489,95 +1505,13 @@ ninja-keys::part(ninja-input-wrapper) {
 
 /* ============================
    GLOBAL BACKGROUND
+   Flat, single-colour ground in both themes: no gradients, glow layers,
+   star field or shooting stars.
 =============================== */
 
 body {
-  background:
-    radial-gradient(circle at 30% 20%, var(--glow1), transparent 60%),
-    radial-gradient(circle at 70% 80%, var(--glow2), transparent 60%),
-    var(--bg);
-  background-attachment: fixed;
+  background: var(--global-bg-color);
   overflow-x: hidden;
   position: relative;
 }
-
-/* Dark Mode */
-html[data-theme="dark"] {
-  --bg: #050510;
-  --glow1: rgba(120, 0, 255, 0.15);
-  --glow2: rgba(0, 150, 255, 0.20);
-  --star: rgba(255, 255, 255, 0.9);
-}
-
-/* Light Mode – subtle sky blue & white */
-html[data-theme="light"] {
-  --bg: #f9fbff;                      /* clean white-blue */
-  --glow1: rgba(150, 190, 255, 0.18); /* soft sky glow */
-  --glow2: rgba(200, 230, 255, 0.25); /* pale ice blue */
-  --star: rgba(0, 80, 150, 0.5);      /* subtle navy-blue star */
-}
-
-/* ============================
-   STAR FIELD
-=============================== */
-
-.star-field {
-  position: fixed;
-  inset: 0;
-  overflow: hidden;
-  z-index: -1;
-  pointer-events: none;
-}
-
-.star {
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  border-radius: 50%;
-  background: var(--star);
-  opacity: 0.5;
-  animation: starFloat 12s linear infinite;
-}
-
-@keyframes starFloat {
-  0% { transform: translateY(0); opacity: 0.7; }
-  100% { transform: translateY(-200px); opacity: 0.1; }
-}
-
-/* ============================
-   SHOOTING STARS (Very Soft)
-=============================== */
-
-.shooting-star {
-  position: fixed;
-  width: 2px;
-  height: 2px;
-  background: var(--star);
-  border-radius: 50%;
-  filter: blur(0.4px);
-  top: -30px;
-  left: -100px;
-  opacity: 0;
-  animation: shooting 7s ease-in-out infinite;
-}
-
-.shooting-star:nth-child(2) { animation-delay: 3s; }
-.shooting-star:nth-child(3) { animation-delay: 5s; }
-
-@keyframes shooting {
-  0% { opacity: 0; transform: translate(0,0) scale(1); }
-  12% { opacity: 1; }
-  80% { opacity: 0; }
-  100% { transform: translate(900px, 250px) scale(0.8); opacity: 0; }
-}
-
-/* ============================
-   REDUCED MOTION SUPPORT
-=============================== */
-@media (prefers-reduced-motion: reduce) {
-  .star,
-  .shooting-star {
-    animation: none;
-    opacity: 0;
-  }
 }

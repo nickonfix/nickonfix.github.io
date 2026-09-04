@@ -1,22 +1,4 @@
 <header>
-<div class="star-field">
-  <!-- generate ~40 stars -->
-  <script>
-    for (let i = 0; i < 100; i++) {
-      const star = document.createElement('div');
-      star.className = 'star';
-      star.style.top = Math.random() * 100 + '%';
-      star.style.left = Math.random() * 100 + '%';
-      star.style.animationDuration = 8 + Math.random() * 6 + 's';
-      document.querySelector('.star-field').appendChild(star);
-    }
-  </script>
-
-  <!-- elegant 3 shooting stars -->
-  <div class="shooting-star"></div>
-  <div class="shooting-star"></div>
-  <div class="shooting-star"></div>
-</div>
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">

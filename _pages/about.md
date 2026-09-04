@@ -6,6 +6,7 @@ subtitle: Research Engineer at <a href="https://www.linkedin.com/company/atherop
 profile:
   align: right
   image: no-smile.png
+  image_circular: true
   # adDr.ess: >
   #   <p>555 your office number</p>
   #   <p>123 your adDr.ess street</p>

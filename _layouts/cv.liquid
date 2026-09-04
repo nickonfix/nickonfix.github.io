@@ -72,6 +72,22 @@ layout: default
       {% endif %}
     </header>
 
+    {% comment %}
+      Section nav, centred under the title. This replaces the left-hand
+      bootstrap-toc sidebar, which pushed the whole CV off-centre.
+    {% endcomment %}
+    <nav class="cv-nav">
+      {% for data in site.data.resume %}
+        {% if site.jsonresume and site.jsonresume.size > 0 %}
+          {% unless site.jsonresume contains data[0] %}
+            {% continue %}
+          {% endunless %}
+        {% endif %}
+        {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
+        <a href="#{{ data[0] }}">{{ data[0] | capitalize }}</a>
+      {% endfor %}
+    </nav>
+
     <article>
       <div class="cv">
         {% for data in site.data.resume %}
