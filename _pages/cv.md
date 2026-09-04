@@ -2,10 +2,10 @@
 layout: cv
 permalink: /cv/
 title: CV
-nav: false
+nav: true
 nav_order: 5
-cv_pdf: assets/pdf/nick.pdf # you can also use external links here
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
+cv_pdf: assets/pdf/Nikhil-Singh.pdf # you can also use external links here
+description: Research Engineer at AtheroPoint LLC, working on transformers and attention-based deep learning for biomedical imaging.
 toc:
   sidebar: left
 ---

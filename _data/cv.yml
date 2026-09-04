@@ -2,96 +2,86 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Nikhil Singh
+    - name: Role
+      value: Research Engineer, AtheroPoint LLC
     - name: Languages
-      value: English, German
+      value: English, Hindi
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: B.Tech., Electronics &amp; Communication Engineering
+      institution: Guru Gobind Singh Indraprastha University, Delhi, India
+      year: 2021 - 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+        - "GPA: 8.3 / 10"
+        - Studied at Bharati Vidyapeeth's College of Engineering, New Delhi.
+        - Research assistant under <a href="https://scholar.google.com/citations?user=4IC-Sw8AAAAJ&hl=en">Dr. Arun Kumar Dubey</a>.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Engineer
+      institution: AtheroPoint LLC, California, USA
+      year: May 2024 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - "Principal Investigator: <a href=\"https://scholar.google.com/citations?user=AKJK7UQAAAAJ&hl=en\">Prof. Jasjit S. Suri</a>."
+        - Built UNet-transformer/Mamba models for carotid ultrasound segmentation.
+        - Automated cIMT and plaque-burden measurement.
+        - Validated against expert tracings across 5K+ annotated scans.
+        - Deployed FastAPI/AWS inference services powering AtheroEdge 4.0.
+
+    - title: Python Developer, LLM Fine-Tuning
+      institution: Green Rider Technologies LLP, New Delhi, India
+      year: Dec 2024 - Feb 2025
       description:
-        - Description 1.
-        - Description 2.
+        - Curated 200K+ EN/HI/ES records for instruction tuning.
+        - LoRA-tuned Gemini 1.0 Pro and LLaMA 2.
+        - Automated benchmarking across MMLU, GSM8K, and prompt-injection probes.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+- title: Research Publications &amp; Patents
+  type: time_table
+  contents:
+    - year: 2026
+      items:
+        - "[J] Attention/Transformer-Based AI Models for Carotid Segmentation and IMT/Plaque Area Measurements in Japanese Ultrasound Scans — <i>Measurement</i> (Elsevier) [Q1, IF 6.1]"
+        - "[J] Twelve Fused Models: Four Transformer-Based Tuners on Three UNet Architectures for Carotid Wall Segmentation and Plaque Burden/IMT Measurement — <i>Diagnostics</i> (MDPI), 16(16):2538 [Q1, IF 3.8]"
+        - "[J] A Comparative Study of State-of-the-Art AI Models for Automated Plaque Measurement in a Carotid Ultrasound Japanese Cohort — <i>Cardiovascular Diagnosis and Therapy</i> (AME), Major Revision [Q1, IF 2.2]"
+        - "[J] Y-Net-Based Wall Thickness and Plaque Burden Measurements in Ultrasound Scans with Low, Moderate, and High-Risk Patients — <i>Scientific Reports</i> (Nature), Under Review [Q1, IF 4.9]"
+        - "[P] Method and Apparatus for Cardiovascular Disease Risk Assessment — U.S. Patent filed with USPTO, Appln. No. 19/738,450 (Jun 2026)"
+        - "[P] Method and Apparatus for Cardiovascular Risk Assessment Using an Ensemble of Deep Neural Networks — U.S. Patent filed with USPTO (Sep 2026)"
 
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+    - title: <a href="https://github.com/nickonfix/Liveknee">Liveknee</a>
+      year: 2021 - 2022
+      description: Deep-learning framework for early detection of knee osteoarthritis, deployed at <a href="https://liveknee.onrender.com/">liveknee.onrender.com</a>.
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Deep learning architectures
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Transformers, attention mechanisms, and state-space (Mamba) models.
+        - UNet variants and hybrid segmentation backbones.
+    - title: Applied AI
       items:
-        - Description 1.
-        - Description 2.
+        - Medical image segmentation and cardiovascular risk stratification.
+        - LLM fine-tuning (LoRA), evaluation, and efficient ML systems.
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Competitive programming, algorithmic problem solving.
+
+- title: References
+  type: time_table
+  contents:
+    - title: Dr. Jasjit S. Suri
+      institution: CEO and Chairperson, AtheroPoint; Professor, Idaho State University, USA
+    - title: Dr. Luca Saba
+      institution: Professor of Radiology, University of Cagliari, Italy
+    - title: Dr. Arun Kumar Dubey
+      institution: Associate Professor, Bharati Vidyapeeth's College of Engineering

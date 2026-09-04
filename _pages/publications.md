@@ -2,8 +2,8 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: sorted by year
-years: [2025]
+description: journal articles, patents and preprints, sorted by year
+years: [2026, 2025]
 nav: true
 nav_order: 2
 ---

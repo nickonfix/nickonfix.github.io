@@ -1,19 +1,20 @@
 ---
 ---
 
-
-@article{singh2025meas,
-      title={Attention/Transformer-based Artificial Intelligence Models for Carotid Segmentation and Intima Media Thickness/Plaque Area Measurements in Japanese Ultrasound Scans}, 
-      author = {Nikhil Singh{*} and Jasjit Singh Suri and Others},
+@article{singh2026meas,
+      title={Attention/Transformer-based Artificial Intelligence Models for Carotid Segmentation and Intima Media Thickness/Plaque Area Measurements in Japanese Ultrasound Scans},
+      author = {Nikhil Singh and Arun K. Dubey and Luca Saba and Jasjit S. Suri},
       year={2026},
       month={January},
       selected={true},
       abbr={Measurement},
-      publisher={Elesvier},
-      doi={https://doi.org/10.1016/j.measurement.2026.120311},
+      publisher={Elsevier},
+      doi={10.1016/j.measurement.2026.120311},
+      html={https://doi.org/10.1016/j.measurement.2026.120311},
       preview={meas.jpg},
       pdf={MEAS.pdf},
-      journal={Measurement Journal (Elesvier) (Q1, IF = 5.6) (Accepted)},
+      bibtex_show={true},
+      journal={Measurement (Elsevier) (Q1, IF = 6.1) (Accepted)},
       abstract={Background and Motivation: Accurate plaque segmentation and measurement in carotid
 ultrasound scans is essential for effective diagnosis and cardiovascular disease (CVD) risk
 stratification. The latest techniques based on solo single stage deep learning UNet (M1:SS-
@@ -29,7 +30,7 @@ transformer system against five models utilizing single and double stage attenti
 configurations namely M1:SS-UNet, single-stage with attention-UNet (M2:SSwAttSkip-
 UNet), double-stage with attention-UNet (M3:DSwAttSkip-UNet), double-stage with
 attention in decoder UNet (M4:DSwAttDeco-UNet) and single stage with transformer in the
-bottle neck layer (M5:SSTransBot-UNet)
+bottle neck layer (M5:SSTransBot-UNet).
 Results: The results showed that M6:SSwAttSkip-XmerBot-UNet achieved a perfect score of
 100%, while M4:DSwAttDeco-UNet followed closely by 93.93%. Both models consistently
 outperformed M1:SS-UNet, M2:SSwAttSkip-UNet, M3:DSwAttSkip-UNet and M5:
@@ -42,18 +43,22 @@ UNet provide highly accurate, reliable, and automated technique that segments an
 the risk of CVD.}
 }
 
-@article{singh2025kbs,
-      title={Plaque Burden and Carotid Intima-Media Thickness Measurements in Ultrasound Scans: Are Transformer Tuners a Must for UNet Architectures?}, 
-      author = {Nikhil Singh{*} and Jasjit Singh Suri and Others},
-      year={2025},
-      month={Oct},
+@article{singh2026diagnostics,
+      title={Twelve Fused Models: Four Transformer-Based Tuners on Three UNet Architectures for Carotid Wall Segmentation and Plaque Burden/IMT Measurement},
+      author = {Nikhil Singh and Luca Saba and Jasjit S. Suri},
+      year={2026},
+      month={August},
       selected={true},
-      abbr={KBS},
+      abbr={Diagnostics},
       preview={Kbs.jpg},
-      publisher={Elesvier},
-      journal={Knowledge-based Systems (Elesvier) (Q1, IF = 7.6) (Under Review November 2025)},
+      publisher={MDPI},
+      volume={16},
+      number={16},
+      pages={2538},
+      bibtex_show={true},
+      journal={Diagnostics (MDPI) (Q1, IF = 3.8) (Published)},
       pdf={KBS.pdf},
-      html={https://www.sciencedirect.com/journal/knowledge-based-systems},
+      html={https://www.mdpi.com/journal/diagnostics},
       abstract={Background and Motivation: UNet-based Deep Learning systems have dominated in the field
 of medical imaging for segmentation of organs; however, it is not accurate, validated, or
 generalized. Transformers or attention, on the other hand, provide solutions that are
@@ -73,23 +78,24 @@ than the single-stage UNet architecture. The combination of single UNet backbone
 transformers/attention mechanisms then creates a structure-sensitive and extremely nuanced
 pipeline. Altogether, the proposed hybrid framework is scalable, high-throughput, and fits
 properly into the real-life clinical practice where the accuracy and stability of segmentation
-vital importance.
+are of vital importance.
 Conclusions: We conclude that Hybrid transformer-based models like B1+T4 provide highly
-accurate, reliable, and automated techniques that segments and measure the risk of CVD.}
+accurate, reliable, and automated techniques that segment and measure the risk of CVD.}
 }
 
-@article{sinha2025bspc,
-      title={A Comparative study of the latest Artificial intelligence-based Models for Plaque Measurement in a Carotid Ultrasound-based Japanese Cohort}, 
-      author = {Nikhil Singh{*} and Jasjit Singh Suri and Others},
-      year={2025},
-      month={march},
+@article{singh2026cdt,
+      title={A Comparative Study of State-of-the-Art AI Models for Automated Plaque Measurement in a Carotid Ultrasound Japanese Cohort},
+      author = {Nikhil Singh and Luca Saba and Jasjit S. Suri},
+      year={2026},
+      month={March},
       selected={true},
-      abbr={BSPC},
-      publisher={Elesvier},
+      abbr={CDT},
+      publisher={AME Publishing Company},
       preview={bspc.jpg},
-      journal={Biomedical Signal Processing and Control (Elesvier) (Q1, IF = 4.9) (Under Review July 2025)},
+      bibtex_show={true},
+      journal={Cardiovascular Diagnosis and Therapy (AME) (Q1, IF = 2.2) (Major Revision)},
       pdf={BSPC.pdf},
-      html={https://www.sciencedirect.com/journal/biomedical-signal-processing-and-control},
+      html={https://cdt.amegroups.org/},
       abstract={Background and Motivation: Accurate plaque measurement in carotid ultrasound images is
 essential for effective diagnosis and CVD risk stratification. Traditional methods for plaque
 assessment rely on manual segmentation and rule-based approaches, leading to inconsistent
@@ -99,9 +105,9 @@ well as low contrast ultrasound images. This study aims to compare state-of-the-
 models for carotid plaque measurement, evaluating their efficiency, robustness, and clinical
 applicability in a Japanese cohort.
 Method: This study evaluates three deep learning models, i.e., (i) conventional neural
-networks(cNonAtt-dsCNN), (ii) attention-enhanced U-Net(cAtt-ssUNet),(iii) a two-stage
-attention-based method(cAtt-dsUNet) and compares against commercial AtheroEdge™
-2.0(AE2.0) from AtheroPoint, CA, USA-an automated method. All three DL models were
+networks (cNonAtt-dsCNN), (ii) attention-enhanced U-Net (cAtt-ssUNet), (iii) a two-stage
+attention-based method (cAtt-dsUNet) and compares against commercial AtheroEdge 2.0
+(AE2.0) from AtheroPoint, CA, USA-an automated method. All three DL models were
 trained on the same Japanese data with identical hyperparameters using the Adam optimizer,
 batch size 32, and a learning rate of 0.001 on an NVIDIA GPU cluster. The metrics used
 were: (i) total plaque area, and carotid intima-media thickness (cIMT), giving the automated
@@ -109,106 +115,56 @@ lumen-intima, and media-adventitia (LIMA) boundaries in the far wall carotid ult
 scans. The performance of these models was assessed using (i) Dice similarity, (ii) Jaccard
 index on binary segmented walls, and (iii) polyline distance metric for measuring cIMT.
 Conclusions: cAtt-dsUNet outperformed traditional DL methods and is comparable to the
-commercial system AtheroEdge™.}
+commercial system AtheroEdge.}
 }
 
-@article{patent2025singh,
-      title={Two Stage Systems}, 
-      author={Nikhil Singh (Co-Inventor)},
-      year={2025},
-      month={Dec},
+@article{ruzsa2026ynet,
+      title={Y-Net-Based Wall Thickness and Plaque Burden Measurements in Ultrasound Scans with Low, Moderate, and High-Risk Patients},
+      author = {Zoltan Ruzsa and Nikhil Singh and Luca Saba and Jasjit S. Suri},
+      year={2026},
+      month={June},
+      selected={true},
+      abbr={Sci. Rep.},
+      publisher={Nature Portfolio},
+      bibtex_show={true},
+      journal={Scientific Reports (Nature) (Q1, IF = 4.9) (Under Review)},
+      html={https://www.nature.com/srep/},
+      abstract={A Y-Net-based deep learning framework is developed for simultaneous carotid wall
+thickness and plaque burden quantification in B-mode ultrasound scans, stratified across low,
+moderate, and high-risk patient groups. The dual-decoder Y-Net jointly recovers the
+lumen-intima and media-adventitia boundaries, enabling automated cIMT and total plaque
+area estimation without separate post-processing stages. Performance is benchmarked against
+expert tracings and conventional single-decoder UNet baselines across the full risk spectrum,
+demonstrating stable accuracy in the high-risk cohort where low-contrast and irregular plaque
+morphology typically degrade segmentation quality.}
+}
+
+@misc{suri2026patentcvd,
+      title={Method and Apparatus for Cardiovascular Disease Risk Assessment},
+      author={Jasjit S. Suri and Nikhil Singh (Co-Inventor)},
+      year={2026},
+      month={June},
       selected={true},
       abbr={US Patent},
-      publisher=false,
-      journal={US Patent App, To be filed by},
       preview={Patent.jpg},
-      abstract={Will be available post patent filing.}
+      pdf={USP.pdf},
+      note={Application No. 19/738,450},
+      journal={U.S. Patent filed with USPTO, assigned to AtheroPoint LLC (Appln. No. 19/738,450)},
+      abstract={U.S. patent application (Appln. No. 19/738,450) filed with the USPTO and assigned to
+AtheroPoint LLC, covering methods and apparatus for cardiovascular disease risk assessment
+from carotid ultrasound imaging and clinical covariates.}
 }
 
-
-article{https://doi.org/10.48550/arxiv.2205.04860,
-  doi = {10.48550/ARXIV.2205.04860},
-  author = {Joshi, A. and Sinha, A.},
-  keywords = {Information Theory (cs.IT), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  title = {Universal Caching},
-  publisher = {arXiv},
-  copyright = {Creative Commons Attribution Non Commercial No Derivatives 4.0 International},
-  selected={true},
-  abbr={ITW},
-  arxiv={2205.04860},
-  journal={Information Theory Workshop},
-  year={2022},
-  month={Nov},
-  publisher={Information Theory Workshop},
-  slides={ITW22-UC.pdf},
-  abstract={In the learning literature, the performance of an online policy is commonly measured in terms of the static regret metric, which compares the cumulative loss of an online policy to that of an optimal benchmark in hindsight. In the definition of static regret, the benchmark policy remains fixed throughout the time horizon. Naturally, the resulting regret bounds become loose in non-stationary settings where fixed benchmarks often suffer from poor performance. In this paper, we investigate a stronger notion of regret minimization in the context of an online caching problem. In particular, we allow the action of the offline benchmark at any round to be decided by a finite state predictor containing arbitrarily many states. Using ideas from the universal prediction literature in information theory, we propose an efficient online caching policy with an adaptive sub-linear regret bound. To the best of our knowledge, this is the first data-dependent regret bound known for the universal caching problem. We establish this result by combining a recently-proposed online caching policy with an incremental parsing algorithm, e.g., Lempel-Ziv '78. Our methods also yield a simpler learning-theoretic proof of the improved regret bound as opposed to the more involved and problem-specific combinatorial arguments used in the earlier works.}
-}
-
-article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  selected={true}
-}
-
-book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,}
-}
-
-article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
-}
-
-
-article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@misc{suri2026patentensemble,
+      title={Method and Apparatus for Cardiovascular Risk Assessment Using an Ensemble of Deep Neural Networks},
+      author={Jasjit S. Suri and Nikhil Singh},
+      year={2026},
+      month={September},
+      selected={true},
+      abbr={US Patent},
+      preview={Patent.jpg},
+      journal={U.S. Patent filed with USPTO, assigned to AtheroPoint LLC},
+      abstract={U.S. patent application filed with the USPTO and assigned to AtheroPoint LLC, covering
+cardiovascular risk assessment driven by an ensemble of deep neural networks that fuses
+imaging-derived phenotypes with conventional risk factors.}
 }
