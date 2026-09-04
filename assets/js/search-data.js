@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-publications",
           title: "Publications",
-          description: "journal articles, patents and preprints, sorted by year. Complete list on Google Scholar.",
+          description: "journal articles, patents and preprints, sorted by year",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
