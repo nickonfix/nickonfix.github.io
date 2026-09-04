@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-publications",
           title: "Publications",
-          description: "journal articles, patents and preprints, sorted by year",
+          description: "journal articles, patents and preprints, sorted by year. Complete list on Google Scholar.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -90,6 +90,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://www.linkedin.com/in/heyvisitor", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=5gcQwrUAAAAJ", "_blank");
         },
       },{
         id: 'social-x',
