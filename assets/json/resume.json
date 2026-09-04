@@ -72,10 +72,7 @@
       "startDate": "2021-07-01",
       "endDate": "2025-07-01",
       "score": "8.3/10",
-      "courses": [
-        "Studied at Bharati Vidyapeeth's College of Engineering, New Delhi",
-        "Research assistant under Dr. Arun Kumar Dubey"
-      ]
+      "courses": ["Studied at Bharati Vidyapeeth's College of Engineering, New Delhi", "Research assistant under Dr. Arun Kumar Dubey"]
     }
   ],
   "publications": [
@@ -151,25 +148,13 @@
       "name": "Large Language Models",
       "level": "Intermediate",
       "icon": "fa-solid fa-comment-dots",
-      "keywords": [
-        "LoRA fine-tuning",
-        "Multilingual data curation",
-        "MMLU / GSM8K benchmarking",
-        "Prompt-injection evaluation"
-      ]
+      "keywords": ["LoRA fine-tuning", "Multilingual data curation", "MMLU / GSM8K benchmarking", "Prompt-injection evaluation"]
     },
     {
       "name": "Engineering",
       "level": "Advanced",
       "icon": "fa-solid fa-code",
-      "keywords": [
-        "Python",
-        "PyTorch",
-        "FastAPI",
-        "AWS",
-        "Docker",
-        "Git"
-      ]
+      "keywords": ["Python", "PyTorch", "FastAPI", "AWS", "Docker", "Git"]
     }
   ],
   "languages": [
@@ -188,20 +173,12 @@
     {
       "name": "Research Interests",
       "icon": "fa-solid fa-flask",
-      "keywords": [
-        "Efficient transformer design",
-        "Sequence modeling",
-        "Multimodal understanding",
-        "Model generalization"
-      ]
+      "keywords": ["Efficient transformer design", "Sequence modeling", "Multimodal understanding", "Model generalization"]
     },
     {
       "name": "Outside Work",
       "icon": "fa-solid fa-terminal",
-      "keywords": [
-        "Competitive programming",
-        "Algorithmic problem solving"
-      ]
+      "keywords": ["Competitive programming", "Algorithmic problem solving"]
     }
   ],
   "references": [
@@ -225,10 +202,7 @@
     {
       "name": "Knee Osteoarthritis Detection using Deep Learning",
       "summary": "A deep-learning framework for early detection of knee osteoarthritis from ultrasound scans.",
-      "highlights": [
-        "Deep learning",
-        "Medical imaging"
-      ],
+      "highlights": ["Deep learning", "Medical imaging"],
       "startDate": "2021-12-01",
       "endDate": "2022-03-01",
       "url": "https://github.com/nickonfix/Liveknee"
